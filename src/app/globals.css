@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #1a56db;
+  --secondary-blue: #2563eb;
+  --light-blue: #60a5fa;
+  --dark-blue: #1e40af;
+  --background-blue: #f0f7ff;
+}
+
+@layer base {
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+@layer components {
+  .dashboard-card {
+    @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200;
+  }
+  
+  .metric-value {
+    @apply text-2xl font-bold text-gray-900;
+  }
+  
+  .metric-label {
+    @apply text-sm text-gray-600;
+  }
+  
+  .time-selector {
+    @apply bg-white rounded-lg shadow-sm p-4 flex items-center space-x-4;
+  }
+} 
