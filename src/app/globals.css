@@ -12,7 +12,7 @@
 
 @layer base {
   body {
-    @apply bg-gray-50;
+    @apply bg-gray-50 min-h-screen;
   }
 }
 
@@ -31,5 +31,17 @@
   
   .time-selector {
     @apply bg-white rounded-lg shadow-sm p-4 flex items-center space-x-4;
+  }
+
+  .customer-list-item {
+    @apply flex justify-between items-center p-2 hover:bg-gray-50 rounded-md;
+  }
+
+  .revenue-decline {
+    @apply font-semibold text-red-600;
+  }
+
+  .show-more-button {
+    @apply mt-4 text-blue-600 hover:text-blue-800 text-sm font-medium w-full text-center py-2 hover:bg-gray-50 rounded-md;
   }
 } 
